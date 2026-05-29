@@ -56,3 +56,26 @@ Agents select tools based on docstrings
 Failure recovery is critical
 ReAct traces help debugging
 Tool contracts reduce hallucination
+
+
+
+## Day 10 Lab 10A — Hello-CrewAI
+
+### Goal
+Built a 2-agent CrewAI system that generates a 1-page TCS Digital placement preparation brief.
+
+### Agents
+1. **Placement Researcher** — prepares factual placement notes.
+2. **Placement Brief Writer** — converts notes into a student-friendly markdown brief.
+
+### Workflow
+Researcher → Writer → Final Markdown Brief
+
+### Files Generated
+- `day10_lab10a_transcript.txt`
+- `tcs_digital_brief.md`
+
+### Reflection
+1. The handoff between agents is the design quality.
+2. `expected_output` is the contract between agents.
+3. Verbose mode helps debug multi-agent workflows.
